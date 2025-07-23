@@ -1,8 +1,8 @@
-package com.api.base;
+package com.api.automation.payload.service;
 
 import io.restassured.response.Response;
 
-public class AuthService extends BaseService{
+public class AuthService extends BaseService {
 
     private static final String base_path = "/api/auth";
 

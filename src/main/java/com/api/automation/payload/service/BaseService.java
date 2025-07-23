@@ -1,4 +1,5 @@
-package com.api.base;
+package com.api.automation.payload.service;
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -18,7 +19,7 @@ public class BaseService {
 
         //Construction which will initialize the instance variable i.e., requestSpecification as below
         public BaseService() {
-            requestSpecification = given().baseUri(baseURL);
+            requestSpecification = RestAssured.given().baseUri(baseURL);
         }
         protected Response postRequest(Object payload, String endpoint) {
             return requestSpecification.contentType(ContentType.JSON).body(payload).post(endpoint);    // We have not provided the content type as param

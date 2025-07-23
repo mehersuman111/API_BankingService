@@ -1,4 +1,4 @@
-package com.api.models.request;
+package com.api.automation.payload.requestPayload.authenticationReq;
 
 public class LoginRequest {
     private String username;
