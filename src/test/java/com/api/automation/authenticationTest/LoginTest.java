@@ -6,7 +6,9 @@ import com.api.automation.payload.responsePayload.authenticationRes.LoginRespons
 import com.api.automation.service.AuthService;
 import io.restassured.response.Response;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+@Listeners(com.api.automation.implement.listeners.TestListeners.class)
 public class LoginTest {
     @Test(description="Verify if Login API is working or Not.")
     public void loginTest() {

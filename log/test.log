@@ -1,0 +1,7 @@
+19:20:07.381 [main] INFO  com.api.automation.implement.listeners.TestListeners - Test execution started for test: BankingServiceAPI
+19:20:07.440 [main] INFO  com.api.automation.implement.listeners.TestListeners - Test started: loginTest
+19:20:09.100 [main] INFO  com.api.automation.implement.listeners.TestListeners - Test passed: loginTest
+19:20:09.100 [main] INFO  com.api.automation.implement.listeners.TestListeners - Description: Verify if Login API is working or Not.
+19:20:09.103 [main] INFO  com.api.automation.implement.listeners.TestListeners - Test started: loginAPIStatusCodeTest
+19:20:09.313 [main] INFO  com.api.automation.implement.listeners.TestListeners - Test passed: loginAPIStatusCodeTest
+19:20:09.313 [main] INFO  com.api.automation.implement.listeners.TestListeners - Description: Verify the status code of the LogIn API Post request.
