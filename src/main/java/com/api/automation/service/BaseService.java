@@ -3,6 +3,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import com.api.automation.implement.filters.LoggingFilter;
 import static io.restassured.RestAssured.*;
 
     /* This BaseService class is responsible for handling
@@ -15,6 +16,9 @@ import static io.restassured.RestAssured.*;
 public class BaseService {
         private static final String baseURL = "http://64.227.160.186:8080";
         private RequestSpecification requestSpecification;
+        static {
+            RestAssured.filters(new LoggingFilter());
+        }
         //Construction which will initialize the instance variable i.e., requestSpecification as below
         public BaseService() {
             requestSpecification = RestAssured.given().baseUri(baseURL);

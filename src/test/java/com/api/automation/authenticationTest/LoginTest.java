@@ -17,8 +17,8 @@ public class LoginTest {
         Response response = authService.login(loginRequest);
         //System.out.println(response.asPrettyString());
         LoginResponse loginResponse = response.as(LoginResponse.class);
-        System.out.println(loginResponse);
-        System.out.println(loginResponse.getId());
+        /*System.out.println(loginResponse);
+        System.out.println(loginResponse.getId());*/
         Assert.assertTrue(loginResponse.getId()!=0);
     }
     @Test(description="Verify the status code of the LogIn API Post request.",dependsOnMethods = "loginTest")
@@ -28,8 +28,8 @@ public class LoginTest {
         Response response = authService.login(loginRequest);
         //System.out.println(response.asPrettyString());
         LoginResponse loginResponse = response.as(LoginResponse.class);
-        System.out.println(loginResponse);
-        System.out.println(response.getStatusCode());
+        /*System.out.println(loginResponse);
+        System.out.println(response.getStatusCode());*/
         Assert.assertEquals(response.getStatusCode(),200);
     }
 }
